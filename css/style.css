@@ -2,60 +2,60 @@
     font-family: 'Lato', 'sans-serif';
 }
 
-.bg-primary-color{
+.bg-primary-color {
     background-color: #FFF;
 }
 
-.bg-secondary-color{
+.bg-secondary-color {
     background-color: #ECE8EA;
 }
 
-.bg-dark-color{
+.bg-dark-color {
     background-color: #050505;
 }
 
-.primary-color{
+.primary-color {
     color: #050505;
 }
 
-.secondary-color{
+.secondary-color {
     color: #7A7A7A;
 }
 
 /* NAVBAR */
-#navbar{
+#navbar {
     border-bottom: 1px solid #7A7A7A;
 }
 
-#navbar a:hover{
+#navbar a:hover {
     color: #7A7A7A;
 }
 
-#navbar a.active{
+#navbar a.active {
     border-bottom: 1px solid #050505;
 }
 
-.navbar-brand{
+.navbar-brand {
     display: flex;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 40px;
 }
 
-.navbar-brand span{
+.navbar-brand span {
     font-weight: 700;
     font-size: 1.5em;
     margin-left: .5em;
 }
 
-#navbar-items .navbar-nav{
+#navbar-items .navbar-nav {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-#navbar-items .nav-item{
+#navbar-items .nav-item {
     margin: 0 1em;
 }
 
@@ -65,75 +65,76 @@
     margin-bottom: 1em;
 }
 
-#slider .carousel-caption{
+#slider .carousel-caption {
     bottom: 3em;
 }
 
-#slider .carousel-caption h5{
+#slider .carousel-caption h5 {
     font-size: 2.5em;
     text-shadow: #000 2px 2px;
 }
 
-.btn{
+.btn {
     border-radius: 0;
 }
 
-#slider .btn{
+#slider .btn {
     padding: .3em .8em;
     font-size: 1em;
     margin-top: 1em;
 }
 
-.carousel-control-prev i, .carousel-control-next i{
+.carousel-control-prev i,
+.carousel-control-next i {
     color: #111;
     font-size: 3em;
 }
 
-.carousel-indicators [data-bs-target]{
+.carousel-indicators [data-bs-target] {
     background-color: #222;
     opacity: 0.8;
 }
 
-.carousel-indicators .active{
+.carousel-indicators .active {
     background-color: #000;
 }
 
 /* MINI BANNERS */
-#mini-banners{
+#mini-banners {
     margin-bottom: 4em;
 }
 
-#mini-banners .card{
+#mini-banners .card {
     padding: 2em .3em;
     border-radius: 0;
     margin-bottom: 1em;
 }
 
-#mini-banners i{
+#mini-banners i {
     font-size: 4em;
 }
 
-#mini-banners .card-title{
+#mini-banners .card-title {
     margin-bottom: 1.5em;
 }
 
-#mini-banners .btn{
+#mini-banners .btn {
     margin-top: 1.5em;
     padding: 0.6em 1.2em;
 }
 
 /* DESTAQUES */
-#featured-container{
+#featured-container {
     margin-bottom: 4em;
 }
 
-.title{
+.title {
     font-size: 1.75em;
     margin-bottom: .4em;
     position: relative;
 }
 
-.title::before{
+.title::before {
     width: 75px;
     border-top: 4px solid #7A7A7A;
     content: '';
@@ -141,16 +142,16 @@
     bottom: 2em;
 }
 
-#featured-images{
+#featured-images {
     margin-top: 2em;
 }
 
-#featured-images .col-md-4{
+#featured-images .col-md-4 {
     position: relative;
     cursor: pointer;
 }
 
-#featured-images .banner-content{
+#featured-images .banner-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -164,44 +165,72 @@
     opacity: 0.6;
 }
 
-#featured-images .col-md-4:hover > .banner-content{
+#featured-images .col-md-4:hover>.banner-content {
     transition: .5s;
     opacity: 0.8;
 }
 
+/* INFO */
+#info-content {
+    padding: 4em 1em;
+}
+
+#info-numbers {
+    margin: 1.5em 0;
+}
+
+#info-banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+#info-numbers h3 {
+    font-size: 3em;
+}
+
+/*  */
+
 @media (min-width: 768px) {
-    #slider .carousel-caption{
+    #slider .carousel-caption {
         bottom: 15em;
     }
 
-    #slider .carousel-caption h5{
+    #slider .carousel-caption h5 {
         font-size: 4em;
         text-shadow: #000 2px 3px;
     }
 
-    #slider .btn{
+    #slider .btn {
         padding: 0.6em 1.6em;
     }
 
-    .carousel-indicators{
+    .carousel-indicators {
         bottom: 7em;
     }
 
     /* MINI BANNERS */
-    #mini-banners{
+    #mini-banners {
         margin-top: -6em;
     }
 
     /* DESTAQUES */
-    .title{
+    .title {
         font-size: 2.4em;
     }
 
-    .title::before{
+    .title::before {
         bottom: 1.5em;
     }
 
-    #featured-images .banner-content{
+    #featured-images .banner-content {
         opacity: 0;
     }
+
+    /* INFO */
+    #info-content{
+        padding: 3.5em;
+    }
+
+    /*  */
 }
